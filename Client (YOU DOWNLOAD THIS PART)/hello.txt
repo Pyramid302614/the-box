@@ -1,0 +1,70 @@
+===================================================================================================================
+
+ _______  __   __  _______    _______  _______  __   __ 
+|       ||  | |  ||       |  |  _    ||       ||  |_|  |
+|_     _||  |_|  ||    ___|  | |_|   ||   _   ||       |
+  |   |  |       ||   |___   |       ||  | |  ||       |
+  |   |  |       ||    ___|  |  _   | |  |_|  | |     | 
+  |   |  |   _   ||   |___   | |_|   ||       ||   _   |
+  |___|  |__| |__||_______|  |_______||_______||__| |__|
+
+  Version 1.0
+
+===================================================================================================================
+
+To open the box, simply run that shortcut over there!
+You can even drag it into your desktop if you'd like :)
+
+As soon as you see "<your name> joined" you can start typing messages
+
+. * . Commands * . *
+----------------------
+You can run commands like "/exit" and "/name Pyramid30" to do cool stuff! :D
+Here's the full list:
+
+/exit              >> Exits the box
+/server <server>   >> Changes the server (Do not include "http" or "https"!!)
+/name <name>       >> Changes your name (You will be known as "Anonymous" until you do so)
+
+
+
+FANCY STUFF:
+
+Whats printed
+----------------
+Unrecognized websocket messages or internal messages will be printed as "[RAW] ...."
+The only messages that will be interpreted in the interface are:
+- "name>...."
+- "message>...."
+- "join>...."
+- "leave>...."
+
+Signal formats:
+-----------------
+All variables will be marked with CAPITALS!!!! >:O
+Different attributes are separated with "&&&&&&&&" meaning yes... things will break a little bit if you send messages with four ambersands in them (pls dont '~')
+
+name>PREVIOUS_NAME&&&&&&&&NEW_NAME
+
+message>MESSAGE&&&&&&&&DISPLAY_NAME
+
+join>DISPLAY_NAME
+
+leave>DISPLAY_NAME
+
+Servers
+----------------
+Essentially if you copy the backend
+off of Github or something you can host your own
+box on a vps or something like that! I would NOT recommend tho if 
+you aren't good with tech. As you need to understand networking for
+you to be able to do it.
+
+If you *are* techy, you essentially need an https connection to go to whatever computer/server you want to host from and then have the port 3000 forwarded. (Or any other tbh, just go in the code and change it if you don't want 3000) To start the server, it's pretty straight forward. Just run "node server.js" if you have Node.js installed! And then to connect to your server, all you need to do is to run /server <ip of server with port> (Example: "/server my-cool-vps.org:3000")
+
+Assuming I won't really distribute this and im just making this documentation for fun, you will basically have 0 reason to ever do this, unless you just want a basic chat box thing for you and your friends which would be really cool :) 
+I plan on making a web client of this so its accessible on Chromebooks
+
+
+Is this coded well? Not really
+Is it gonna be way better in 2.0? Maybe ;)
